@@ -1,0 +1,77 @@
+@media screen and (max-width: 1024px) {
+  .portfolio-cards-wrapper {
+    gap: 20px;
+  }
+  .card {
+    max-width: 100%;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    font-size: 40px;
+  }
+  .portfolio-header {
+    font-size: 36px;
+  }
+  .footer-col {
+    min-width: 100%;
+  }
+  .footer-icons-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-title {
+    font-size: 32px;
+  }
+  .portfolio-header {
+    font-size: 28px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .footer-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+.header-title {
+  font-size: clamp(24px, 5vw, 40px);
+}
+@media screen and (max-width: 480px) {
+  .footer-icons-row > * {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text {
+    padding: 10px;
+    text-align: center;
+  }
+}
+.footer-button1 {
+  width: 100%;
+  padding: 10px;
+}
+@media screen and (max-width: 480px) {
+  .footer-button1 {
+    font-size: 14px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 20px;
+}
+
+.highlight-row {
+  font-weight: bold;
+  color: #453c82;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #9e9ac2;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr {
+  transition: background-color 0.3s ease-in-out;
+}
+
+tr:hover {
+  background-color: #6e6e6e; /* Світло-сірий колір при наведенні */
+}
+
+/* Загальний ефект чергування кольорів */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Виняток для рядка з кнопками */
+tr.no-hover {
+  background-color: #ffffff !important; /* Фіксуємо білий фон */
+}
+
+/* Забороняємо зміну кольору при наведенні */
+tr.no-hover:hover {
+  background-color: #ffffff !important; /* Не змінюємо фон */
+}
+
+/* Відключаємо зміну кольору при наведенні тільки для рядка з кнопками */
+tr.no-hover:hover {
+  background-color: #ffffff !important;
+}
+
+/* Відновлюємо ховер для всіх інших рядків */
+tr:not(.no-hover):hover {
+  background-color: #d3d3d3 !important; /* Світло-сірий відтінок */
+}
+
+/*.main-page {*/
+/*  display: flex;*/
+/*  height: 100vh; !* Займає весь екран *!*/
+/*}*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* Висота 100% від вікна */
+  box-sizing: border-box; /* Для точного обчислення висоти */
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden; /* Заборона горизонтальної прокрутки */
+}
+
+td {
+  padding: 13px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  color: black;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #b0b0b0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #9e9ac2; /* Темніший відтінок при наведенні */
+}
+
+.header5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  text-align: center;
+}
+
+.text-top {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-middle {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.text-bottom {
+  font-size: 18px;
+  color: white;
+  margin-top: 5px;
+}
+
+th:nth-child(1) {
+  background-color: #9e9ac2;
+}
+
+th:nth-child(2) {
+  background-color: #8681b3;
+}
+
+th:nth-child(3) {
+  background-color: #6963a1;
+}
+
+th:nth-child(4) {
+  background-color: #4f4891;
+}
+
+th:nth-child(5) {
+  background-color: #3d3585;
+}
+
+td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
